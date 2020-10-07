@@ -37,5 +37,5 @@ public abstract class Product {
         this.quantity++;
     }
 
-    public abstract int getCost();
+    public abstract double getCost();
 }

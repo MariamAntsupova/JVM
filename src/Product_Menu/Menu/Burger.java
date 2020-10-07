@@ -5,6 +5,7 @@ import Product_Menu.Product;
 public class Burger extends Product {
     private static final int Burger_Quantity = 6;
     final double price = 5;
+    double burgerFinalPrice = getQuantity() * Burger_Quantity * getPrice();
 
     public Burger() {}
 
@@ -13,8 +14,8 @@ public class Burger extends Product {
         super(name, quantity, price);
     }
     @Override
-    public int getCost() {
-        return getQuantity() * Burger_Quantity;
+    public double getCost() {
+        return burgerFinalPrice;
     }
 
 }
